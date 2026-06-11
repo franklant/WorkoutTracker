@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" class="content-container">
+
+        <h1 id="header-title"><span style="color: red;">BETA* </span>Workout Tracker</h1>
+    </div>
+    <div id="body" class="content-container">
+        <div id="new-workout-table" class="workout-table">
+            <h3>New Workout</h3>
+            <label for="date">Date:</label>
+            <input id="date" type="text" placeholder="mm/dd/yyyy">
+            <table class="n-workout-table">
+                <tr bgcolor="green">
+                    <th>Workout</th>
+                    <th>Reps</th>
+                    <th>Weight</th>
+                </tr>
+                <tbody id="entries"></tbody>
+                <tr id="add-entry" bgcolor="gray">
+                    <td colspan="3" style="text-align: center;">
+                        <button id="add-entry-btn">Add Entry</button>
+                    </td>
+                </tr>
+            </table>
+            <button id="submit-new-workout-btn">Submit New Workout</button>
+        </div>
+        <br><br><br><br>
+        <div id="previous-workout-table" class="workout-table">
+            <h3>Past Workout</h3>
+            <p>Date: <span id="prev-date"></span></p>
+            <table class="p-workout-table">
+                <tr bgcolor="green">
+                    <th>Workout</th>
+                    <th>Reps</th>
+                    <th>Weight</th>
+                </tr>
+                <tbody id="p-entries"></tbody>
+                <tr id="border-entry" bgcolor="gray">
+                    <td colspan="3" style="text-align: center;">
+                        <p style="color: white;">End</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer" class="content-container">
+        <h2 id="footer-name">Franklan Taylor</h2>
+        <div id="footer-links">
+            <table>
+                <tr>
+                    <th>Github</th>
+                    <th>LinkedIn</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.github.com/franklant" target="_blank">Github</a>
+                    </td>
+                    <td>
+                        <a href="https://www.linkedin.com/in/franklant" target="_blank">LinkedIn</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./src/js/main.js"></script>
+</html>
